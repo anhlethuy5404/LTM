@@ -67,5 +67,22 @@
         <delete dir="${build.generated.dir}/jax-wsCache/ObjectService"/>
         <delete dir="${build.generated.sources.dir}/jax-ws/WS_ObjectService_GNfQc9Ov"/>
     </target>
-    <target name="wsimport-client-generate" depends="wsimport-client-CharacterService, wsimport-client-DataService, wsimport-client-ObjectService"/>
+    <target name="wsimport-client-CharacterService_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/CharacterService_1"/>
+        <property name="wsdl-CharacterService_1" location="xml-resources/web-service-references/CharacterService_1/wsdl/203.162.10.109_8080/JNPWS/CharacterService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/CharacterService_1" destdir="${build.generated.dir}/jax-wsCache/CharacterService_1" wsdl="${wsdl-CharacterService_1}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://203.162.10.109:8080/JNPWS/CharacterService?wsdl" xnocompile="true" xendorsed="true" package="WS_CharacterService_Chi">
+            <depends file="${wsdl-CharacterService_1}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/CharacterService_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/CharacterService_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-CharacterService_1" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/CharacterService_1"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/WS_CharacterService_Chi"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-CharacterService, wsimport-client-DataService, wsimport-client-ObjectService, wsimport-client-CharacterService_1"/>
 </project>

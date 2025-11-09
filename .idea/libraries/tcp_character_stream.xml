@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="tcp_character_stream">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/tcp_character_stream.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

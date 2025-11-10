@@ -84,5 +84,73 @@
         <delete dir="${build.generated.dir}/jax-wsCache/CharacterService_1"/>
         <delete dir="${build.generated.sources.dir}/jax-ws/WS_CharacterService_Chi"/>
     </target>
-    <target name="wsimport-client-generate" depends="wsimport-client-CharacterService, wsimport-client-DataService, wsimport-client-ObjectService, wsimport-client-CharacterService_1"/>
+    <target name="wsimport-client-DataService_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/DataService_1"/>
+        <property name="wsdl-DataService_1" location="xml-resources/web-service-references/DataService_1/wsdl/203.162.10.109_8080/JNPWS/DataService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/DataService_1" destdir="${build.generated.dir}/jax-wsCache/DataService_1" wsdl="${wsdl-DataService_1}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://203.162.10.109:8080/JNPWS/DataService?wsdl" xnocompile="true" xendorsed="true" package="WS_DataService_Chi">
+            <depends file="${wsdl-DataService_1}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/DataService_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/DataService_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-DataService_1" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/DataService_1"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/WS_DataService_Chi"/>
+    </target>
+    <target name="wsimport-client-DataService_2" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/DataService_2"/>
+        <property name="wsdl-DataService_2" location="xml-resources/web-service-references/DataService_2/wsdl/203.162.10.109_8080/JNPWS/DataService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/DataService_2" destdir="${build.generated.dir}/jax-wsCache/DataService_2" wsdl="${wsdl-DataService_2}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://203.162.10.109:8080/JNPWS/DataService?wsdl" xnocompile="true" xendorsed="true" package="WS_DataService_Chi">
+            <depends file="${wsdl-DataService_2}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/DataService_2"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/DataService_2">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-DataService_2" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/DataService_2"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/WS_DataService_Chi"/>
+    </target>
+    <target name="wsimport-client-ObjectService_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/ObjectService_1"/>
+        <property name="wsdl-ObjectService_1" location="xml-resources/web-service-references/ObjectService_1/wsdl/203.162.10.109_8080/JNPWS/ObjectService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ObjectService_1" destdir="${build.generated.dir}/jax-wsCache/ObjectService_1" wsdl="${wsdl-ObjectService_1}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://203.162.10.109:8080/JNPWS/ObjectService?wsdl" xnocompile="true" xendorsed="true" package="WS_ObjectService_Chi">
+            <depends file="${wsdl-ObjectService_1}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/ObjectService_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/ObjectService_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-ObjectService_1" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/ObjectService_1"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/WS_ObjectService_Chi"/>
+    </target>
+    <target name="wsimport-client-CharacterService_2" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/CharacterService_2"/>
+        <property name="wsdl-CharacterService_2" location="xml-resources/web-service-references/CharacterService_2/wsdl/203.162.10.109_8080/JNPWS/CharacterService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/CharacterService_2" destdir="${build.generated.dir}/jax-wsCache/CharacterService_2" wsdl="${wsdl-CharacterService_2}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://203.162.10.109:8080/JNPWS/CharacterService?wsdl" xnocompile="true" xendorsed="true" package="WS_CharacterService_TAnh">
+            <depends file="${wsdl-CharacterService_2}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/CharacterService_2"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/CharacterService_2">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-CharacterService_2" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/CharacterService_2"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/WS_CharacterService_TAnh"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-CharacterService, wsimport-client-DataService, wsimport-client-ObjectService, wsimport-client-CharacterService_1, wsimport-client-DataService_1, wsimport-client-DataService_2, wsimport-client-ObjectService_1, wsimport-client-CharacterService_2"/>
 </project>

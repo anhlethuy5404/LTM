@@ -3,16 +3,22 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/asus/OneDrive/LTM/src/RMI/CharacterClient_Chi.java</file>
-            <file>file:/C:/Users/asus/OneDrive/LTM/src/RMI/CharacterClient_TAnh.java</file>
-            <file>file:/C:/Users/asus/OneDrive/LTM/src/RMI/Client.java</file>
-            <file>file:/C:/Users/asus/OneDrive/LTM/src/WS_DataService_Chi/Client.java</file>
-            <file>file:/C:/Users/asus/OneDrive/LTM/src/RMI/ByteClient_nPfkeDp9_Chi.java</file>
-            <file>file:/C:/Users/asus/OneDrive/LTM/src/WS_ObjectService_Chi/Client.java</file>
-            <file>file:/C:/Users/asus/OneDrive/LTM/src/RMI/ObjectClient_TAnh.java</file>
-            <file>file:/C:/Users/asus/OneDrive/LTM/src/WS_CharacterService_Chi/Client.java</file>
-            <file>file:/C:/Users/asus/OneDrive/LTM/src/RMI/Order.java</file>
-            <file>file:/C:/Users/asus/OneDrive/LTM/src/WS_CharacterService_TAnh/Client.java</file>
+            <file>file:/C:/Users/asus/OneDrive/LTM/src/UDP_tong2sonhiphan/Server.java</file>
+            <file>file:/C:/Users/asus/OneDrive/LTM/src/UDP_ptulonnhatcuadaycon/Server.java</file>
+            <file>file:/C:/Users/asus/OneDrive/LTM/src/UDP_sapxeptheovitribd/Server.java</file>
+            <file>file:/C:/Users/asus/OneDrive/LTM/src/UDP_String_43JSVYvP/Client.java</file>
+            <file>file:/C:/Users/asus/OneDrive/LTM/src/UDP_sapxeptheovitribd/Client.java</file>
+            <file>file:/C:/Users/asus/OneDrive/LTM/src/UDP_qlittnhanvien/Server.java</file>
+            <file>file:/C:/Users/asus/OneDrive/LTM/src/UDP_ptulonnhatcuadaycon/Client.java</file>
+            <file>file:/C:/Users/asus/OneDrive/LTM/src/UDP_sapxeptheotudienngc/Client.java</file>
+            <file>file:/C:/Users/asus/OneDrive/LTM/src/UDP_chuanhoattsach/Client.java</file>
+            <file>file:/C:/Users/asus/OneDrive/LTM/src/UDP_qlittnhanvien/Employee.java</file>
+            <file>file:/C:/Users/asus/OneDrive/LTM/src/UDP_qlittnhanvien/Client.java</file>
+            <file>file:/C:/Users/asus/OneDrive/LTM/src/UDP_sapxeptheotudienngc/Server.java</file>
+            <file>file:/C:/Users/asus/OneDrive/LTM/src/UDP_chuanhoattsach/Book.java</file>
+            <file>file:/C:/Users/asus/OneDrive/LTM/src/UDP_tong2sonhiphan/Client.java</file>
+            <file>file:/C:/Users/asus/OneDrive/LTM/src/UDP_chuanhoattsach/Server.java</file>
+            <file>file:/C:/Users/asus/OneDrive/LTM/src/UDP_tong2songuyenlon/Client.java</file>
         </group>
     </open-files>
 </project-private>

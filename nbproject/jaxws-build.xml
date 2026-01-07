@@ -152,5 +152,22 @@
         <delete dir="${build.generated.dir}/jax-wsCache/CharacterService_2"/>
         <delete dir="${build.generated.sources.dir}/jax-ws/WS_CharacterService_TAnh"/>
     </target>
-    <target name="wsimport-client-generate" depends="wsimport-client-CharacterService, wsimport-client-DataService, wsimport-client-ObjectService, wsimport-client-CharacterService_1, wsimport-client-DataService_1, wsimport-client-DataService_2, wsimport-client-ObjectService_1, wsimport-client-CharacterService_2"/>
+    <target name="wsimport-client-ObjectService_2" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/ObjectService_2"/>
+        <property name="wsdl-ObjectService_2" location="xml-resources/web-service-references/ObjectService_2/wsdl/203.162.10.109_8080/JNPWS/ObjectService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ObjectService_2" destdir="${build.generated.dir}/jax-wsCache/ObjectService_2" wsdl="${wsdl-ObjectService_2}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://203.162.10.109:8080/JNPWS/ObjectService?wsdl" xnocompile="true" xendorsed="true" package="WS_ObjectService_149">
+            <depends file="${wsdl-ObjectService_2}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/ObjectService_2"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/ObjectService_2">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-ObjectService_2" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/ObjectService_2"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/WS_ObjectService_149"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-CharacterService, wsimport-client-DataService, wsimport-client-ObjectService, wsimport-client-CharacterService_1, wsimport-client-DataService_1, wsimport-client-DataService_2, wsimport-client-ObjectService_1, wsimport-client-CharacterService_2, wsimport-client-ObjectService_2"/>
 </project>
